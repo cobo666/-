@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源管理系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>资源管理系统</h1>
+        <nav id="auth-links">
+            <a href="login.html" id="login-link">登录</a>
+            <a href="register.html" id="register-link">注册</a>
+            <a href="upload.html" id="upload-link" style="display:none;">上传资源</a>
+            <button id="logout-button" style="display:none;">登出</button>
+        </nav>
+        <div id="user-info" style="display:none;"></div>
+    </header>
+
+    <main>
+        <section id="categories">
+            <h2>分类</h2>
+            <button class="category-button" data-category="直播素材">直播素材</button>
+            <button class="category-button" data-category="直播插件">直播插件</button>
+            <button class="category-button" data-category="直播工具">直播工具</button>
+            <button class="category-button" data-category="电脑软件">电脑软件</button>
+            <button class="category-button" data-category="all">所有资源</button>
+        </section>
+
+        <section id="resource-list-section">
+            <h2>资源列表</h2>
+            <ul id="resource-list">
+                <!-- Resources will be listed here by JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 资源平台</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

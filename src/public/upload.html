@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传资源 - 资源管理系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>上传新资源</h1>
+        <nav><a href="index.html">首页</a></nav>
+    </header>
+    <main>
+        <form id="upload-form">
+            <div>
+                <label for="name">资源名称:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="description">资源描述:</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+            <div>
+                <label for="category">分类:</label>
+                <select id="category" name="category" required>
+                    <option value="">请选择分类</option>
+                    <option value="直播素材">直播素材</option>
+                    <option value="直播插件">直播插件</option>
+                    <option value="直播工具">直播工具</option>
+                    <option value="电脑软件">电脑软件</option>
+                </select>
+            </div>
+            <div>
+                <label for="resourceFile">选择文件:</label>
+                <input type="file" id="resourceFile" name="resourceFile" required>
+            </div>
+            <button type="submit">上传</button>
+        </form>
+        <p id="upload-message"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

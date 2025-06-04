@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    display: inline;
+}
+
+header nav {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav a, header nav button {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#categories {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.category-button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background-color: #4cae4c;
+}
+
+#resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+#resource-list li {
+    border-bottom: 1px #eee solid;
+    padding: 10px 0;
+}
+
+#resource-list li:last-child {
+    border-bottom: none;
+}
+
+#resource-list h3 {
+    margin-top: 0;
+}
+
+#resource-list .download-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+#resource-list .download-button:hover {
+    background-color: #0056b3;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for width calculation */
+}
+
+button[type="submit"] {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+#user-info {
+    color: #fff;
+    margin-left: 20px;
+    display: inline-block; /* Keep it on the same line as nav if space allows */
+}
+
+p#login-message, p#register-message, p#upload-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.success { color: green; }
+.error { color: red; }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 资源管理系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>用户登录</h1>
+        <nav><a href="index.html">首页</a></nav>
+    </header>
+    <main>
+        <form id="login-form">
+            <div>
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">登录</button>
+        </form>
+        <p id="login-message"></p>
+        <p>还没有账户? <a href="register.html">注册一个</a></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
